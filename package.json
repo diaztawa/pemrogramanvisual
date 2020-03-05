@@ -17,6 +17,16 @@
   "license": "ISC",
   "dependencies": {
     "electron": "^8.0.2",
+    "husky": "^4.2.3",
+    "pretty-quick": "^2.0.1",
     "save": "^2.4.0"
+  },
+  "devDependencies": {
+    "prettier": "1.19.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }
