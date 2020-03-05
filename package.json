@@ -1,0 +1,22 @@
+{
+  "name": "pemrogramanvisual",
+  "version": "1.0.0",
+  "description": "Percobaan",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "pemrogramanvisual"
+  },
+  "keywords": [
+    "node.js"
+  ],
+  "author": "Diaz",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^8.0.2",
+    "save": "^2.4.0"
+  }
+}
