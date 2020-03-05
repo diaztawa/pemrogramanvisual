@@ -4,7 +4,7 @@
   "description": "Percobaan",
   "main": "index.js",
   "scripts": {
-    "start": "electron ."
+    "start": "set ELECTRON_DISABLE_SECURITY_WARNINGS=true && electron ."
   },
   "repository": {
     "type": "git",
