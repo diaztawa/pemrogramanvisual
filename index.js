@@ -132,3 +132,4 @@ const menuTemplate = [
     submenu: [{ role: "reload" }, { role: "toggledevtools" }]
   }
 ];
+// Ini hasil video ke-6
