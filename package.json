@@ -19,7 +19,8 @@
     "electron": "^8.0.2",
     "husky": "^4.2.3",
     "pretty-quick": "^2.0.1",
-    "save": "^2.4.0"
+    "save": "^2.4.0",
+    "uuid": "^7.0.3"
   },
   "devDependencies": {
     "prettier": "1.19.1"
