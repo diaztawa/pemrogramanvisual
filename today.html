@@ -14,9 +14,9 @@
       const { ipcRenderer } = electron;
       ipcRenderer.send("appointment:request:today");
 
-      ipcRenderer.on("appointment:request:today", (event, appointment) => {
-        const listDiv = document.getElementById("List");
-        appointments.forEach(appointment => {
+      ipcRenderer.on("appointment:response:today", (event, appointment) => {
+        const listDiv = document.getElementById("list");
+        appointment.forEach(appointment => {
           const appointmentDiv = document.createElement("div");
           const nameParagraph = document.createElement("p");
           nameParagraph.innerHTML = `Name: ${appointment.name}`;
@@ -55,6 +55,10 @@
           listDiv.append(appointmentDiv);
         });
       });
+
+      const done = id => {
+        ipcRenderer.send("appointment:done", id);
+      };
     </script>
   </body>
 </html>
